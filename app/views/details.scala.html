@@ -1,0 +1,5 @@
+@(item: models.ch2.Item)
+@content(item: models.ch2.Item) = {
+    <p><strong>@item.name</strong>: $@item.price</p>
+}
+@layout("Item details")(content(item))

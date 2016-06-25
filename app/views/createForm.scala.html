@@ -1,0 +1,8 @@
+@(form: Form[models.ch1.CreateItem])
+@layout("Add an item") {
+    @helper.form(routes.Items.createForm()) {
+        @helper.inputText(form("name"))
+        @helper.inputText(form("price"))
+        <button>Save</button>
+    }
+}
