@@ -14,7 +14,6 @@ trait Shop {
     def delete(id: Long): Boolean
 }
 
-
 object Shop extends Shop {
     import db.Schema.queryLanguage._
     import db.Schema.{db, items}
